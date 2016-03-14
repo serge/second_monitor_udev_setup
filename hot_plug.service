@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitor hotplug
+
+[Service]
+Type=simple
+RemainAfterExit=no
+User=sergiy
+ExecStart=/usr/local/bin/hotplug_monitor.sh
+
+[Install]
+WantedBy=multi-user.target
